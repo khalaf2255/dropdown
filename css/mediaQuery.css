@@ -8,7 +8,13 @@
     width: 60%;
   }
 }
- 
+
+@media screen and (max-height: 300px) {
+  .number {
+    width: 60px;
+    display: inline-block;
+}
+}
 @media screen and (max-width: 1880px) {
   [type="button"]:not(:disabled) {
     top: 8px;
@@ -245,4 +251,10 @@ img.wrong {
 .carousel-inner { 
   padding: 10px 30px; 
 }
+}
+@media screen and (max-width: 420px) {
+  .options.show {
+    top: 90px;
+  
+  }
 }
