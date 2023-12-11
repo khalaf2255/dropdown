@@ -41,11 +41,20 @@
   display: flex;
 }
 .options.show {
-  top: 93px;
+  top: 99px;
   left: 50%;
   transform: translateX(-50%);
+ }
+ .dropdown.show .options::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 20px solid transparent;
+  border-bottom: 20px solid black;
+  z-index: 999999999999999999;
 }
- 
 .option {
   width: 70px; 
   border: 2px solid;
@@ -58,7 +67,7 @@
 
   }
   .number {
-    width: 100px;
+    width: 95px;
     display: inline-block;
 }
 .number img{
@@ -75,4 +84,11 @@
  
 img.wrong {
   width: 100%;
+}
+
+.green_border {
+  border-color: green;
+}
+.red_border {
+  border-color: red;
 }

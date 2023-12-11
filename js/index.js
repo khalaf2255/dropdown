@@ -14,20 +14,23 @@ $(document).ready(function () {
 $(".dropdown").each(function () {
   $(this).on("click", function () {
     $(".dropdown").removeClass("show");
-    $(this).addClass("show");
-    $(this).find(".options").addClass("show").removeClass("hide");
+
+    $(this).addClass("show"); 
+      $(this).find(".options").addClass("show").removeClass("hide");
+ 
   });
 });
 
 //  CLICK OPTION
 $(".option").each(function () {
   $(this).on("click", function () {
-
     console.log("gg");
     let optionClicked = $(this).attr("data_answer");
 
     // CHECK CORRECT ANSWER --------------------------------------------->
     if (optionClicked === "correct") {
+      $(this).parent().parent().addClass("green_border");
+
       $(".carousel-item.active .dropdown").removeClass("show");
       setTimeout(() => {
         $(".carousel-item.active.options").addClass("hide").removeClass("show");
@@ -55,12 +58,15 @@ $(".option").each(function () {
     } else {
       // CHECK INCORRECT ANSWER --------------------------------------------->
       playSound("././assets/audio/incorrect.mp3");
+      $(this).parent().parent().addClass("red_border");
+
       let wrongImage = `<image class="wrong" src=${$(this)
         .children()
         .attr("src")} />`;
       $(this).parent().parent().append(wrongImage);
       setTimeout(() => {
         $(this).parent().parent().find(".wrong").remove();
+        $(this).parent().parent().removeClass("red_border");
       }, 500);
     }
   });
@@ -83,7 +89,11 @@ $(".showAnsBtn").on("click", function () {
         .children()
         .attr("src")} />`;
       if (!$(this).parent().parent().children().hasClass("correctManual")) {
-        $(this).parent().parent().append(correctImage).addClass("preventClick");
+        $(this)
+          .parent()
+          .parent()
+          .append(correctImage)
+          .addClass("preventClick green_border");
       }
     }
   });
@@ -94,7 +104,9 @@ $(".showAnsBtn").on("click", function () {
 // RELOAD SCREEN ------------------------------------------------->
 $(".reloadScrren").on("click", function () {
   $(".carousel-item.active .correctManual").remove();
-  $(".carousel-item.active  .dropdown ").removeClass("preventClick complete");
+  $(".carousel-item.active  .dropdown ").removeClass(
+    "preventClick complete show green_border"
+  );
   $(".showAnsBtn").removeClass("disabled");
   $(".carousel-item.active").removeClass("Done");
 });
@@ -103,13 +115,9 @@ $(".reloadScrren").on("click", function () {
 $(".reloadAll").on("click", function () {
   $(".showAnsBtn").removeClass("disabled");
   $(".correctManual").remove();
-  $(".dropdown ").removeClass("preventClick");
-
-  $(".dropdown").removeClass("show");
+  $(".dropdown ").removeClass("preventClick complete show green_border");
   $(".options").addClass("show").removeClass("hide");
-  $(".dropdown").removeClass("complete");
   $(".carousel-item").removeClass("Done");
-
 
   if (currentIndex == 1) {
     $(".carousel-control-prev").addClass("disabled");
@@ -130,6 +138,7 @@ $(".carousel-control-next, .carousel-control-prev, .carousel-indicators li").on(
   function () {
     checkDisabledWithBtn();
     getCurrentIndex();
+    $(".dropdown ").removeClass("show");
     if (currentIndex == 1) {
       $(".carousel-control-next").addClass("disabled");
       $(".carousel-control-prev").removeClass("disabled");
