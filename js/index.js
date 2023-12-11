@@ -15,9 +15,8 @@ $(".dropdown").each(function () {
   $(this).on("click", function () {
     $(".dropdown").removeClass("show");
 
-    $(this).addClass("show"); 
-      $(this).find(".options").addClass("show").removeClass("hide");
- 
+    $(this).addClass("show");
+    $(this).find(".options").addClass("show").removeClass("hide");
   });
 });
 
@@ -58,15 +57,20 @@ $(".option").each(function () {
     } else {
       // CHECK INCORRECT ANSWER --------------------------------------------->
       playSound("././assets/audio/incorrect.mp3");
-      $(this).parent().parent().addClass("red_border");
-
+      $(this).parent().parent().addClass("red_border preventClick");
+      setTimeout(() => {
+        $(this).parent().parent().removeClass("red_border");
+      }, 200);
+      setTimeout(() => {
+        $(this).parent().parent().addClass("red_border");
+      }, 350);
       let wrongImage = `<image class="wrong" src=${$(this)
         .children()
         .attr("src")} />`;
       $(this).parent().parent().append(wrongImage);
       setTimeout(() => {
         $(this).parent().parent().find(".wrong").remove();
-        $(this).parent().parent().removeClass("red_border");
+        $(this).parent().parent().removeClass("red_border preventClick");
       }, 500);
     }
   });
