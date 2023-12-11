@@ -1,0 +1,78 @@
+* {
+
+  transition: .4s;
+} 
+.item {
+    height: 100%; 
+} 
+.questions {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.dropdown { 
+  height: 100%;
+  border: 4px solid;
+  box-shadow: 5px 5px 2px gray;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background-image: url('../assets/images/ex-images/question-mark.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.dropdown.show {
+  overflow: visible;
+}
+.options {
+  position: absolute;
+  z-index: 999999999;    
+  transform: translateY(0rem);
+  transition: .4s;
+  display: flex;
+}
+.options.show {
+  top: 93px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+ 
+.option {
+  width: 70px; 
+  border: 2px solid;
+  cursor: pointer;
+  display: inline-block;
+}
+.option img {
+
+  width: 100%; 
+
+  }
+  .number {
+    width: 100px;
+    display: inline-block;
+}
+.number img{
+  width: 100%;
+  height: 100%;
+}
+.operator {
+  width: 60px;
+  display: inline-block;
+}
+.operator img{
+  width: 100%;
+}
+ 
+img.wrong {
+  width: 100%;
+}
