@@ -11,12 +11,13 @@
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
+  margin-top: -2rem;
 }
 .question {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 2rem;
 }
 .dropdown { 
   height: 100%;
@@ -25,7 +26,7 @@
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  background-image: url('../assets/images/ex-images/question-mark.jpg');
+  background-image: url('../assets/images/ex-images/question-mark.png');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -41,14 +42,14 @@
   display: flex;
 }
 .options.show {
-  top: 99px;
+  top: 120px;
   left: 50%;
   transform: translateX(-50%);
  }
  .dropdown.show .options::before {
   content: "";
   position: absolute;
-  top: -40px;
+  top: -39px;
   left: 50%;
   transform: translateX(-50%);
   border: 20px solid transparent;
@@ -56,18 +57,22 @@
   z-index: 999999999999999999;
 }
 .option {
-  width: 70px; 
-  border: 2px solid;
+  width: 76px;
+  border: 4px solid;
   cursor: pointer;
   display: inline-block;
+  border-right: none;
 }
-.option img {
+.option:last-child {
+  border-right: 4px solid black;;
+}
+ .option img {
 
   width: 100%; 
 
   }
   .number {
-    width: 95px;
+    width: 115px;
     display: inline-block;
 }
 .number img{

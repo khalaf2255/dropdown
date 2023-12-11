@@ -53,14 +53,28 @@
 }
 @media screen  and (max-width: 1024px) {
   .number {
-    width: 80px;
+    width: 100px;
     display: inline-block;
 }
 .options.show {
-   top: 95px;
+   top: 110px;
+}
+.option {
+  width: 100px; 
+}
+}
+@media screen  and (max-width: 720px) {
+  .option {
+    width: 75px;
+  } 
+  .options.show {
+    top: 100px;
 }
 }
 @media screen  and (max-width: 668px) {
+  .option:last-child {
+    border-right: 2px solid black;
+}
   .dropdown { 
     border: 2px solid;
   }
@@ -71,18 +85,24 @@
     top: 58px ;
 } 
 .option {
-  width: 36px; 
+  border: 2px solid;
+  width: 44px; 
 }
+
 .operator {
   width: 20px;
   display: inline-block;
 }
 .number {
-  width: 53px; 
+  width: 65px; 
 }
 .dropdown {
   min-height: 31px;
 }
+.questions { 
+  margin-top: -1rem;
+}
+
 }
 @media screen  and (max-height: 1024px) {
     .carousel-inner {
@@ -100,11 +120,12 @@
  
 
     .title {
-        padding: 3px;
-        background: var(--header-footer-bgcolor);
-        margin: 0;
-        font-size: 1.4rem;
-    }
+      padding: 19px;
+      background: var(--header-footer-bgcolor);
+      margin: 0;
+    font-size: 2rem
+    }; 
+
 /* ------------------------------------------------------------ */
 
 
@@ -199,7 +220,7 @@
   /* ---------------------------------------------------- */
 
   .number {
-    width: 20%;
+    width: 100px;
     display: inline-block;
 }
 .dropdown {
