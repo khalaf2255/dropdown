@@ -69,7 +69,7 @@ $(".option").each(function () {
         .attr("src")} />`;
       $(this).parent().parent().append(wrongImage);
       setTimeout(() => {
-        // $(this).parent().parent().find(".wrong").remove();
+        $(this).parent().parent().find(".wrong").remove();
         $(this).parent().parent().removeClass("red_border preventClick");
       }, 500);
     }
