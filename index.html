@@ -1,187 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;600&family=Fira+Sans+Condensed&family=Marhey:wght@300&family=Noto+Sans+Mandaic&family=Oswald:wght@300;500&family=Playpen+Sans&family=Roboto+Condensed:ital,wght@1,300&family=Vina+Sans&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link rel="shortcut icon" href="#" type="image/x-icon" />
-  <!-- GOOGLE FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="shortcut icon" href="#" type="image/x-icon" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;600&family=Fira+Sans+Condensed&family=Marhey:wght@300&family=Noto+Sans+Mandaic&family=Oswald:wght@300;500&family=Playpen+Sans&family=Roboto+Condensed:ital,wght@1,300&family=Vina+Sans&display=swap"
-    rel="stylesheet" />
+    <!-- BOOTSTRAP CSS PROJECT FILE -->
+    <link rel="stylesheet" href="css/libs/bootstrap.css" />
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/libs/scaleable.css" />
 
-  <!-- BOOTSTRAP CSS PROJECT FILE -->
-  <link rel="stylesheet" href="css/libs/bootstrap.css" />
-  <link rel="stylesheet" href="css/libs/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/libs/scaleable.css" />
+    <!-- CSS PROJECT FILE -->
+    <link rel="stylesheet" href="css/template.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/mediaQuery.css" />
+    <title>EXERSICE</title>
+  </head>
 
-  <!-- CSS PROJECT FILE -->
-  <link rel="stylesheet" href="css/template.css" />
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/mediaQuery.css" />
-  <title>EXERSICE</title>
-</head>
-
-<body>
-  <!-- EXERSICE BODY -->
-  <main>
-    <!-- SLIDER OF EXERSICE -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false"
-      data-touch="false">
-      <h1 class="title">Click on the word then place under the image.</h1>
-      <!-- <ol class="carousel-indicators hide">
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="0"
-                class="active"
-              >
-                1
-              </li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1">
-                2
-              </li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2">
-                3
-              </li>
-            </ol> -->
-
-      <div class="carousel-inner">
-        <!-- Slide 1 -->
-        <div index="1" class="carousel-item item item_1  active">
-          <!-- START QUESTIONS -------------------------------------------------------->
-          <div class="questions">
-            <div class="question">
-              <span class="number"><img src="assets/images/ex-images/c.jpg" /></span>
-              <span class="number"><img src="assets/images/ex-images/a.jpg" /></span>
-              <span class="number dropdown" >
-                <div class="options hide"  >
-                  <span class="option" data_answer="incorrect" ><img src="assets/images/ex-images/q.jpg"  /></span>
-                  <span class="option" data_answer="incorrect" ><img src="assets/images/ex-images/b.jpg"  /></span>
-                  <span class="option" data_answer="correct" ><img src="assets/images/ex-images/t.jpg"  /></span>
+  <body>
+    <!-- EXERSICE BODY -->
+    <main>
+      <!-- SLIDER OF EXERSICE -->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+        data-interval="false"
+        data-touch="false"
+      >
+        <h1 class="title">Listen and repeat.</h1>
+        <div class="carousel-inner">
+          <!-- Slide 1 -------------------------------------------------------->
+          <div index="1" class="carousel-item item item_1 active">
+            <!-- START QUESTIONS -------------------------------------------------------->
+            <div class="questions">
+              <div class="question">
+                <div class="word word_1">
+                  <img class="imgs img_1" src="assets/images/ex-images/car.jpg" alt="" />
+                  <div class="word_text">Car</div>
                 </div>
-              </span>
-             </div>
-            <div class="question">
-
-              <span class="number dropdown" >
-                <div class="options hide"  >
-                  <span class="option" data_answer="incorrect" ><img src="assets/images/ex-images/q.jpg"  /></span>
-                  <span class="option" data_answer="correct" ><img src="assets/images/ex-images/d.jpg"  /></span>
-                  <span class="option" data_answer="incorrect" ><img src="assets/images/ex-images/t.jpg"  /></span>
+                <div class="word word_2">
+                  <img class="imgs img_2" src="assets/images/ex-images/cat.png" alt="" />
+                  <div class="word_text"  >Cat</div>
                 </div>
-              </span>
-              <span class="number"><img src="assets/images/ex-images/o.jpg" /></span>
-              
-              <span class="number"><img src="assets/images/ex-images/g.jpg" /></span>
+              </div>
             </div>
-            <div class="question">
-
-              <span class="number"><img src="assets/images/ex-images/r.jpg" /></span>
-              
-              
-              <span class="number dropdown" >
-                <div class="options hide"  >
-                  <span class="option" data_answer="incorrect" ><img src="assets/images/ex-images/w.jpg"  /></span>
-                  <span class="option" data_answer="correct" ><img src="assets/images/ex-images/a.jpg"  /></span>
-                  <span class="option" data_answer="incorrect" ><img src="assets/images/ex-images/o.jpg"  /></span>
-                </div>
-              </span>
-              <span class="number"><img src="assets/images/ex-images/t.jpg" /></span>
-
-            </div>
+            <!-- END QUESTIONS -->
           </div>
-          <!-- END QUESTIONS -->
-        </div>
-        <!-- Slide 2 -------------------------------------------------------->
-        <div index="2" class="carousel-item item item_2 ">
-          <!-- START QUESTIONS -->
-          <div class="questions">
-            <div class="question">
-              <span class="number"><img src="assets/images/ex-images/s.jpg" /></span>
-              <span class="number"><img src="assets/images/ex-images/k.jpg" /></span>
-              <span class="number dropdown" >
-                <div class="options hide"  >
-                  <span class="option" data_answer="incorrect" ><img src="assets/images/ex-images/j.jpg"  /></span>
-                  <span class="option" data_answer="correct" ><img src="assets/images/ex-images/y.jpg"  /></span>
-                  <span class="option" data_answer="incorrect" ><img src="assets/images/ex-images/l.jpg"  /></span>
-                </div>
-              </span>
-            </div>
-            <div class="question">
-
-              <span class="number dropdown" >
-                <div class="options hide"  >
-                  <span class="option" data_answer="incorrect" ><img src="assets/images/ex-images/v.jpg"  /></span>
-                  <span class="option" data_answer="incorrect" ><img src="assets/images/ex-images/s.jpg"  /></span>
-                  <span class="option" data_answer="correct" ><img src="assets/images/ex-images/h.jpg"  /></span>
-                </div>
-              </span>
-              <span class="number"><img src="assets/images/ex-images/i.jpg" /></span>
-              
-              <span class="number"><img src="assets/images/ex-images/n.jpg" /></span>
-            </div>
-            <div class="question">
-
-              <span class="number"><img src="assets/images/ex-images/b.jpg" /></span>
-              <span class="number dropdown" >
-                <div class="options hide"  >
-                  <span class="option" data_answer="correct" ><img src="assets/images/ex-images/a.jpg"  /></span>
-                  <span class="option" data_answer="incorrect" ><img src="assets/images/ex-images/m.jpg"  /></span>
-                  <span class="option" data_answer="incorrect" ><img src="assets/images/ex-images/e.jpg"  /></span>
-                </div>
-              </span>              
-               <span class="number"><img src="assets/images/ex-images/t.jpg" /></span>
-              
-              
-            </div>
-          </div>
-          <!-- END QUESTIONS -->
         </div>
 
- 
+        <div class="controls">
+          <audio id="audio-file" src="assets/audio/car-cat.MP3"></audio>
+          <div id="audio-player"></div>
+        </div>
       </div>
+      <!-- END OF EXERSICE -->
+    </main>
 
-      <div class="controls">
-        <button class="carousel-control-prev disabled" type="button" data-target="#carouselExampleIndicators"
-          data-slide="prev">
-          <img src="assets/images/left-arrow.png" />
-        </button>
-        <div class="reloadAll" data-slide-to="0" data-target="#carouselExampleIndicators">
-          <img src="assets/images/relad-all.png" />
-        </div>
-        <div class="showAnsBtn">
-          <img src="assets/images/show-answer.png" />
-        </div>
-        <div class="reloadScrren">
-          <img src="assets/images/reload-screen.png" />
-        </div>
+    <!-- EXERSICE BODY -->
 
-        <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
-          <img src="assets/images/right-arrow.png" />
-        </button>
-      </div>
-    </div>
-    <!-- END OF EXERSICE -->
-  </main>
+    <!-- BOOTSTRAP LIBERARY FILES -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/lib/bootstrap.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/bootstrap.bundle.js"></script>
+    <script src="js/lib/bootstrap.bundle.min.js"></script>
 
-  <!-- EXERSICE BODY -->
-
-  <!-- BOOTSTRAP LIBERARY FILES -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="js/lib/bootstrap.js"></script>
-  <script src="js/lib/bootstrap.min.js"></script>
-  <script src="js/lib/bootstrap.bundle.js"></script>
-  <script src="js/lib/bootstrap.bundle.min.js"></script>
-
-  <!-- JS PROJECT FILES -->
-  <script src="js/lib/jq.js"></script>
-  <script src="js/lib/scaleable.js"></script>
-  <script src="js/index.js"></script>
-</body>
-
+    <!-- JS PROJECT FILES -->
+    <script src="js/audioProgress.js"></script>
+    <script src="js/lib/jq.js"></script>
+    <script src="js/lib/scaleable.js"></script>
+    <script src="js/index.js"></script>
+  </body>
 </html>

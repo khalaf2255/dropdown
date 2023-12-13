@@ -111,6 +111,16 @@ main {
 .preventClick {
   pointer-events: none;
 }
+.red_border {
+  border: 5px solid rgb(233, 8, 8);
+  background-color: red;
+  color: #fff;
+}
+.green_border {
+  border: 5px solid rgb(15 200 15);
+  background-color: #048504;
+  color: #fff;
+}
 
 .controls button:hover {
   animation: move 0.5s;
