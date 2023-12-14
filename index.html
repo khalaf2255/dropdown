@@ -39,21 +39,30 @@
         data-interval="false"
         data-touch="false"
       >
-        <h1 class="title">Listen and repeat.</h1>
+        <h1 class="title">Listen then answer.</h1>
         <div class="carousel-inner">
           <!-- Slide 1 -------------------------------------------------------->
           <div index="1" class="carousel-item item item_1 active">
             <!-- START QUESTIONS -------------------------------------------------------->
             <div class="questions">
-              <div class="question">
-                <div class="word word_1">
-                  <img class="imgs img_1" src="assets/images/ex-images/car.jpg" alt="" />
-                  <div class="word_text">Car</div>
-                </div>
-                <div class="word word_2">
-                  <img class="imgs img_2" src="assets/images/ex-images/cat.png" alt="" />
-                  <div class="word_text"  >Cat</div>
-                </div>
+              <div class="question preventClick disabled">
+                 <div class="letters" data_word="car">
+                  <div class="letter">c</div>
+                  <div class="letter">t</div>
+                  <div class="letter">x</div>
+                  <div class="letter">z</div>
+                  <div class="letter">a</div>
+                  <div class="letter">g</div>
+                  <div class="letter">e</div>
+                  <div class="letter">r</div>
+                  <div class="letter">b</div>
+                 </div>
+              </div>
+
+              <div class="answer_letters" correct_answer="car">
+                <div class="ans answ_1" data_letter="c"></div>
+                <div class="ans answ_2" data_letter="a"></div>
+                <div class="ans answ_3" data_letter="r"></div>
               </div>
             </div>
             <!-- END QUESTIONS -->
@@ -61,7 +70,13 @@
         </div>
 
         <div class="controls">
-          <audio id="audio-file" src="assets/audio/car-cat.MP3"></audio>
+          <div class="reloadAll" data-slide-to="0" data-target="#carouselExampleIndicators">
+            <img src="assets/images/relad-all.png" alt="" srcset="">
+          </div>
+          <div class="showAnsBtn">
+            <img src="assets/images/show-answer.png" alt="" srcset="">
+          </div>
+          <audio id="audio-file" src="assets/audio/car.MP3"></audio>
           <div id="audio-player"></div>
         </div>
       </div>

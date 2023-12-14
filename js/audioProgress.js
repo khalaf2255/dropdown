@@ -461,16 +461,10 @@ var AudioPlayer = function (options) {
           this.playPauseBtn.setAttribute("class", "");
         }
       }
-
-      if (currentSeconds > 0 && currentSeconds < 7) {
-        $(".img_1").addClass("zoom");
-      } else if (currentSeconds > 7 && currentSeconds < 13) {
-        $(".img_1").removeClass("zoom");
-        $(".img_2").addClass("zoom");
-      } else {
-        $(".imgs").removeClass("zoom");
+      if (currentSeconds > 5) {
+        $(".question").removeClass("preventClick disabled");
         $("#audio-progress-bar").css("width", 0);
-      }
+      }  
       console.log(currentSeconds);
     }),
     // play / pause audio
