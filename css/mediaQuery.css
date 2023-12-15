@@ -9,10 +9,9 @@
   }
 }
 
-@media screen and (max-height: 300px) {
-  .number {
-    width: 60px;
-    display: inline-block;
+@media screen and (max-width: 948px) {
+  .sentences {
+    font-size: 2.1rem;
   }
 }
 @media screen and (max-width: 1880px) {
@@ -51,42 +50,24 @@
   }
 }
 
+@media screen and (min-width: 700px) {
+  .controls { 
+    height: 82px;
+}
+}
 @media screen and (max-width: 668px) {
   #audio-player {
-    padding: 5px ;
+    padding: 5px;
   }
   /* --------------------------------------- */
-  .letters .letter {
-    font-size: 2rem;
-    margin: 0;
-    width: 60px;
-    height: 60px;
+  .sentences {
+    font-size: 1.5rem;
   }
 
-  .letters {
-    width: 400px;
-    gap: 0.7rem;
-  }
-
-  .answer_letters .ans {
-    width: 32px;
-    background: #dedbdb;
-    padding: 0px 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 5px solid #545353;
-    text-transform: capitalize;
-    height: 58px;
-    color: green;
-  }
-  .answer_letters {
-    gap: 4rem;
-    font-size: 2.4rem;
-    /* font-weight: bold; */
-  }
-  .questions {
-    gap: 2.5rem;
+  .title .audio_icon {
+    width: 30px;
+    display: inline-block;
+    margin-right: 0.6rem;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -230,28 +211,11 @@
     padding: 10px 30px;
   }
   /* ---------------------------------------------------- */
-  .question {
-    gap: 2rem;
+  .sentences {
+    font-size: 1.4rem;
   }
-  .answer_letters {
-    gap: 1rem;
-    font-size: 1.8rem;
-    font-weight: bold;
-  }
-
-  .answer_letters .ans {
-    padding: 0px 2.4rem;
-    font-size: 2.4rem;
-  }
-  .letters {
-    width: 270px;
-    gap: 1.2rem;
-  }
-  .complete {
-    border-width: 2px;
-  }
-  .questions {
-    height: 100%;
+  .carousel-inner {
+    padding: 10px 16px;
   }
 }
 @media screen and (max-width: 420px) {

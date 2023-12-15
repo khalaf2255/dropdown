@@ -461,10 +461,31 @@ var AudioPlayer = function (options) {
           this.playPauseBtn.setAttribute("class", "");
         }
       }
-      if (currentSeconds > 5) {
-        $(".question").removeClass("preventClick disabled");
+      if (currentSeconds > 3.8 && currentSeconds < 5.6) {
+        $(".sentence").removeClass("highlight");
+        $(".sent_1").addClass("highlight");
+      } else if (currentSeconds > 5.7 && currentSeconds < 8.8) {
+        $(".sentence").removeClass("highlight");
+        $(".sent_2").addClass("highlight");
+      } else if (currentSeconds > 8.9 && currentSeconds < 11) {
+        $(".sentence").removeClass("highlight");
+        $(".sent_3").addClass("highlight");
+      } else if (currentSeconds > 10 && currentSeconds < 17.2) {
+        $(".sentence").removeClass("highlight");
+        $(".sent_4").addClass("highlight");
+      } else if (currentSeconds > 17.6 && currentSeconds < 21.3) {
+        $(".sentence").removeClass("highlight");
+        $(".sent_5").addClass("highlight");
+      } else if (currentSeconds > 21.9 && currentSeconds < 26) {
+        $(".sentence").removeClass("highlight");
+        $(".sent_6").addClass("highlight");
+      } else if (currentSeconds > 25 && currentSeconds < 30) {
+        $(".sentence").removeClass("highlight");
+        $(".sent_7").addClass("highlight");
+      } else {
+        $(".sentence").removeClass("highlight");
         $("#audio-progress-bar").css("width", 0);
-      }  
+      }
       console.log(currentSeconds);
     }),
     // play / pause audio
@@ -472,7 +493,7 @@ var AudioPlayer = function (options) {
       if (this.audioFile.paused) {
         this.audioFile.play();
 
-        this.playPauseBtn.innerHTML = "| |";
+        this.playPauseBtn.innerHTML = "=";
 
         this.playPauseBtn.setAttribute("class", "playing");
       } else {

@@ -39,44 +39,46 @@
         data-interval="false"
         data-touch="false"
       >
-        <h1 class="title">Listen then answer.</h1>
+        <h1 class="title"><span class="audio_icon"><img src="assets/images/ex-images/audio.png" alt=""></span>Listen and practice.</h1>
         <div class="carousel-inner">
           <!-- Slide 1 -------------------------------------------------------->
           <div index="1" class="carousel-item item item_1 active">
             <!-- START QUESTIONS -------------------------------------------------------->
             <div class="questions">
-              <div class="question preventClick disabled">
-                 <div class="letters" data_word="car">
-                  <div class="letter">c</div>
-                  <div class="letter">t</div>
-                  <div class="letter">x</div>
-                  <div class="letter">z</div>
-                  <div class="letter">a</div>
-                  <div class="letter">g</div>
-                  <div class="letter">e</div>
-                  <div class="letter">r</div>
-                  <div class="letter">b</div>
-                 </div>
-              </div>
-
-              <div class="answer_letters" correct_answer="car">
-                <div class="ans answ_1" data_letter="c"></div>
-                <div class="ans answ_2" data_letter="a"></div>
-                <div class="ans answ_3" data_letter="r"></div>
+              <div class="question">
+                <!--   . -->
+                <div class="sentences">
+                  <span class="sentence sent_1"
+                    >The next time you brush your teeth</span
+                  >,
+                  <span class="sentence sent_2"
+                    >take a closer look at your toothbrush</span
+                  >. <span class="sentence sent_3">It's simple, It's easy to use</span>.
+ 
+                  <span class="sentence sent_4"
+                    > In fact, it's perfect for removing the dirt on and between your
+                    teeth</span
+                  >.
+                  <span class="sentence sent_5"
+                    >Before toothbrushes people chewed on soft sticks</span
+                  >.
+                  <span class="sentence sent_6"
+                    >They even used feathers to pick their teeth after a good
+                    meal</span
+                  >.
+                  <span class="sentence sent_7">
+                    Today, nearly everyone brushes their teeth with a
+                    toothbrush</span
+                  >.
+                </div>
               </div>
             </div>
             <!-- END QUESTIONS -->
           </div>
         </div>
 
-        <div class="controls">
-          <div class="reloadAll" data-slide-to="0" data-target="#carouselExampleIndicators">
-            <img src="assets/images/relad-all.png" alt="" srcset="">
-          </div>
-          <div class="showAnsBtn">
-            <img src="assets/images/show-answer.png" alt="" srcset="">
-          </div>
-          <audio id="audio-file" src="assets/audio/car.MP3"></audio>
+        <div class="controls"> 
+          <audio id="audio-file" src="assets/audio/part1.MP3"></audio>
           <div id="audio-player"></div>
         </div>
       </div>

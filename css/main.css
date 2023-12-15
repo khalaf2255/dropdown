@@ -35,10 +35,22 @@ main {
   padding: 10px 15px;
   border: 4px solid #877713;
 }
+.questions,
+.question {
+  height: 100%;
+}
 .title {
   padding: 20px 17px;
   background: var(--header-footer-bgcolor);
   margin: 0;
+}
+.title .audio_icon {
+  width: 50px;
+  display: inline-block;
+  margin-right: 1rem;
+}
+.title .audio_icon img {
+  width: 100%;
 }
 
 [type="button"]:not(:disabled) {
@@ -61,7 +73,9 @@ main {
   gap: 60px;
   background-color: var(--header-footer-bgcolor);
   align-items: center;
+  /* height: 82px; */
 }
+
 .controls * {
   cursor: pointer;
 }
